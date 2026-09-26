@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Grammie ♡</title>
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+  <div class="background-decor decor-one">♡</div>
+  <div class="background-decor decor-two">✦</div>
+  <div class="background-decor decor-three">♡</div>
+
+  <main class="app">
+
+    <!-- HEADER -->
+    <header class="topbar">
+
+      <div class="brand">
+        <div class="brand-icon">🎀</div>
+
+        <div>
+          <h1>Grammie</h1>
+          <p>Your little writing helper ♡</p>
+        </div>
+      </div>
+
+      <div class="status">
+        <span class="status-dot"></span>
+        Offline AI
+      </div>
+
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero">
+
+      <div class="hero-text">
+
+        <span class="eyebrow">✨ WRITE WITH CONFIDENCE</span>
+
+        <h2>
+          Let's make your words
+          <span>sparkle.</span> ♡
+        </h2>
+
+        <p>
+          Paste your writing below and Grammie will check your
+          grammar, spelling, punctuation, and sentence structure.
+        </p>
+
+      </div>
+
+      <div class="mascot">
+        🐰
+        <span>hi bestie!</span>
+      </div>
+
+    </section>
+
+
+    <!-- WRITING AREA -->
+    <section class="writing-card">
+
+      <div class="card-heading">
+
+        <div>
+          <span class="mini-icon">✏️</span>
+
+          <div>
+            <h3>Your writing</h3>
+            <p>Paste or type something you'd like to check.</p>
+          </div>
+        </div>
+
+        <span id="wordCount">0 words</span>
+
+      </div>
+
+
+      <textarea
+        id="textInput"
+        placeholder="Start writing here... ♡
+
+Example:
+Goodmorning sir, I want to ask if I can pass my assignment tomorrow because im not finish yet."
+      ></textarea>
+
+
+      <div class="writing-footer">
+
+        <button id="clearButton" class="clear-btn">
+          Clear
+        </button>
+
+        <button id="checkButton" class="check-btn">
+          <span>✨</span>
+          Check My Writing
+          <span>→</span>
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- LOADING -->
+    <div id="loading" class="loading hidden">
+
+      <div class="loading-bunny">🐰</div>
+
+      <div>
+        <strong>Grammie is reading...</strong>
+        <p>Checking your writing with local AI ♡</p>
+      </div>
+
+    </div>
+
+
+    <!-- RESULTS -->
+    <section id="results" class="results hidden">
+
+      <div class="results-title">
+        <span>🌸</span>
+
+        <div>
+          <h2>Your results</h2>
+          <p>Here's what Grammie found ♡</p>
+        </div>
+      </div>
+
+
+      <!-- CORRECTED -->
+      <div class="result-card corrected-card">
+
+        <div class="result-header">
+
+          <div>
+            <span class="result-icon">✨</span>
+
+            <div>
+              <h3>Corrected version</h3>
+              <p>Your polished writing</p>
+            </div>
+          </div>
+
+          <button id="copyButton">
+            📋 Copy
+          </button>
+
+        </div>
+
+        <div id="correctedText" class="corrected-text"></div>
+
+      </div>
+
+
+      <!-- CHANGES -->
+      <div class="result-card">
+
+        <div class="result-header">
+
+          <div>
+            <span class="result-icon">🔎</span>
+
+            <div>
+              <h3>What changed?</h3>
+              <p>Little fixes that made your writing better</p>
+            </div>
+          </div>
+
+          <span id="changeCount" class="count-badge">
+            0 changes
+          </span>
+
+        </div>
+
+        <div id="changesList" class="changes-list"></div>
+
+      </div>
+
+
+      <!-- WHY -->
+      <div class="why-card">
+
+        <div class="why-icon">💡</div>
+
+        <div>
+          <h3>Why?</h3>
+
+          <p id="overallText">
+            Grammie will explain your writing here.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+      <span>Made with ♡ and QVAC</span>
+
+      <span>🔒 Your writing stays on this device</span>
+
+    </footer>
+
+  </main>
+
+
+  <script src="/app.js"></script>
+
+</body>
+</html>

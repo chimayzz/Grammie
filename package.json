@@ -1,0 +1,25 @@
+{
+  "name": "grammie",
+  "version": "1.0.0",
+  "description": "A local AI writing companion that fixes grammar, explains mistakes, and helps transform rough thoughts into polished words.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chimayzz/Grammie.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/chimayzz/Grammie/issues"
+  },
+  "homepage": "https://github.com/chimayzz/Grammie#readme",
+  "dependencies": {
+    "@qvac/sdk": "^0.20.0"
+  }
+}
